@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://images.pexels.com/photos/2437295/pexels-photo-2437295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+nav{
+    width: 100%;
+    background-color: aliceblue;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 120px;
+}
+
+nav h1{
+    font-size: 32px;
+    font-family: sans-serif;
+    color: darkcyan;
+    float: left;
+    text-transform: uppercase;
+}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    float: left;
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    padding: 0 16px;
+    display: block;
+    color: darkcyan;
+}
+nav ul li a:hover{
+    color: rgba(0, 139, 139, 0.511);
+    text-decoration: underline;
+
+}
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 0 0 5px 5px;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li{
+    line-height: 1;
+    width: 190px;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+nav ul li ul li a{
+    padding: 10px 16px;
+}
+
+nav ul li ul li a:hover{
+    background-color: rgba(0, 139, 139, 0.511);
+    color: aliceblue;
+}
